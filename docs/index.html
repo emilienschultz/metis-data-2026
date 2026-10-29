@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="slidesS1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="slidesS1_files/libs/quarto-html/tabby.min.js"></script>
-<script src="slidesS1_files/libs/quarto-html/popper.min.js"></script>
-<script src="slidesS1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="slidesS1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slidesS1_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slidesS1_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="slides_s2_v2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="slides_s2_v2_files/libs/quarto-html/tabby.min.js"></script>
+<script src="slides_s2_v2_files/libs/quarto-html/popper.min.js"></script>
+<script src="slides_s2_v2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="slides_s2_v2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="slides_s2_v2_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="slides_s2_v2_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Émilien Schultz - Nicolas Benvegnu">
-  <title>Exploration des savoirs</title>
+  <title>Analyser des données</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="slidesS1_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="slidesS1_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="slides_s2_v2_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="slides_s2_v2_files/libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,11 +32,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slidesS1_files/libs/revealjs/dist/theme/quarto-b765fc41f4021f1fc638eea91fc99a37.css">
-  <link href="slidesS1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="slidesS1_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="slidesS1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="slidesS1_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="slides_s2_v2_files/libs/revealjs/dist/theme/quarto-b765fc41f4021f1fc638eea91fc99a37.css">
+  <link href="slides_s2_v2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="slides_s2_v2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="slides_s2_v2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="slides_s2_v2_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -130,8 +130,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Exploration des savoirs</h1>
-  <p class="subtitle">La place des données dans l’enquête</p>
+  <h1 class="title">Analyser des données</h1>
+  <p class="subtitle">Des données aux résultats</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -144,1002 +144,720 @@
 </section>
 <section id="objectifs-de-la-séance" class="slide level2">
 <h2>Objectifs de la séance</h2>
-<p>Articuler enquête et données</p>
 <ul>
-<li>Aquérir une définition large de ce qu’est une donnée</li>
-<li>Savoir illustrer la variété des données existantes</li>
-<li>Situer la place des données dans l’enquête</li>
-<li>Distinguer données, méthode d’analyse, et outil</li>
-<li>Concevoir un corpus</li>
+<li>Constituer <strong>et décrire</strong> un corpus</li>
+<li>Qu’est-ce qu’analyser ? Méthodes et outils</li>
+<li>Trois approches
+<ul>
+<li>Coder des articles avec un tableur</li>
+<li>Coder des entretiens avec un CAQDAS (QualCoder)</li>
+<li>Faire parler le vocabulaire avec Iramuteq</li>
+</ul></li>
 </ul>
-<p><em>Une deuxième séance sur les méthodes d’analyse</em></p>
+</section>
+<section id="petit-point-détape" class="slide level2">
+<h2>Petit point d’étape</h2>
+<ul>
+<li>Avez-vous identifié des données ?</li>
+<li>Rendus intermédiaires
+<ul>
+<li>Au moins un jeu de données et une méthode d’analyse</li>
+<li>Le lien entre les deux : quelle question, quelle analyse ?</li>
+</ul></li>
+</ul>
+<p><em>Nous y revenons en fin de séance avec une consigne précise</em></p>
 </section>
 <section>
-<section id="quelques-mots-sur-lenquête" class="title-slide slide level1 center">
-<h1>Quelques mots sur l’enquête</h1>
+<section id="constituer-et-décrire-un-corpus" class="title-slide slide level1 center">
+<h1>Constituer et décrire un corpus</h1>
 
 </section>
-<section id="une-pratique-diversifiée" class="slide level2">
-<h2>Une pratique diversifiée</h2>
+<section id="centralité-des-données-dans-le-processus" class="slide level2">
+<h2>Centralité des données dans le processus</h2>
+
+<img data-src="img/iceberg.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="le-travail-des-données-est-un-travail-danalyse" class="slide level2">
+<h2>Le travail des données est un travail d’analyse</h2>
+<p><strong>Une partie de l’analyse se joue au niveau des données</strong></p>
 <ul>
-<li><em>Qui mène des enquêtes ?</em></li>
-<li><em>Quelles sont les similarités de ces enquêtes ?</em></li>
-<li><strong>Comment définir ce qu’est une enquête “en général” ?</strong></li>
+<li>Constituer/filtrer le corpus : que garde-t-on ?</li>
+<li>Transformer les données
+<ul>
+<li>Recoder (ex. uniformiser les noms de journaux)</li>
+<li>Compléter (ex. ajouter une date, un lieu)</li>
+<li>Fusionner (ex. plusieurs exports)</li>
+<li>Supprimer (ex. doublons, hors sujet)</li>
+</ul></li>
+</ul>
+<p><em>Chacun de ces choix est déjà un choix d’analyse : il faut les noter</em></p>
+</section>
+<section id="un-exemple-représentation-du-vélo-en-france" class="slide level2">
+<h2>Un exemple : représentation du vélo en France</h2>
+
+<img data-src="img/articlevelo1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="adapter-cette-analyse-à-paris" class="slide level2">
+<h2>Adapter cette analyse à Paris</h2>
+<ul>
+<li>Quelle période ?</li>
+<li>Quels mots-clés utiliser ?</li>
+<li>Quels journaux privilégier ?</li>
 </ul>
 </section>
-<section id="les-étapes-de-lenquête-scientifique" class="slide level2">
-<h2>Les étapes de l’enquête (scientifique)</h2>
-<p><em>Des étapes assez similaires suivant les domaines</em></p>
+<section id="en-pratique-les-étapes" class="slide level2">
+<h2>En pratique, les étapes</h2>
 <ul>
-<li>Identification d’une nouvelle question (vs.&nbsp;littérature)</li>
-<li>Exploration &amp; Problématisation</li>
-<li><strong>Opérations de connaissance : observations, expériences, etc.</strong></li>
-<li>Analyse des résultats</li>
-</ul>
-<p>(itérations)</p>
-<ul>
-<li>Mise en discussion</li>
-<li>Restitution &amp; diffusion</li>
+<li>Identifier et accéder aux données</li>
+<li>Collecter les données</li>
+<li>Stocker et archiver les données <strong>brutes</strong> (jamais modifiées)</li>
+<li>Transformer en données intermédiaires utilisables</li>
+<li>Documenter chaque étape (un fichier texte suffit)</li>
 </ul>
 </section>
-<section id="les-données-dans-tout-ça" class="slide level2">
-<h2>Les données dans tout ça</h2>
-
-<img data-src="./img/F8zf0iBXcAAYkWc.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
-<section>
-<section id="data-ification" class="title-slide slide level1 center">
-<h1>“Data-ification”</h1>
-
+<section id="construire-le-corpus-sur-europresse" class="slide level2">
+<h2>Construire le corpus sur Europresse</h2>
+<ul>
+<li><strong>Définir le périmètre</strong>
+<ul>
+<li>Ex. <code>TEXT = (cycliste | vélo) &amp; TEXT= paris</code></li>
+</ul></li>
+<li><strong>Récupérer</strong> : exporter en HTML</li>
+<li><strong>Conserver</strong> : nommer le fichier avec la date et la requête</li>
+</ul>
 </section>
-<section id="un-langage-devenu-omniprésent-et-autonome" class="slide level2">
-<h2>Un langage devenu omniprésent et autonome</h2>
+<section id="petit-rappel" class="slide level2">
+<h2>Petit rappel</h2>
 
-<img data-src="./img/data-scientist-meme-main.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="une-abstraction-de-notions-pratiques" class="slide level2">
-<h2>Une abstraction de notions &amp; pratiques</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Parler de manière transversale de ces traces au coeur de la connaissance et de l’action.</p>
+<img data-src="img/smalldata.png" class="quarto-figure quarto-figure-center r-stretch"><p><strong>Trente articles bien compris valent mieux que trois mille mal connus ; ne jamais hésiter à cibler</strong></p>
+</section>
+<section id="décrire-le-corpus-la-première-analyse" class="slide level2">
+<h2>Décrire le corpus : la première analyse</h2>
+<p>Avant toute question, savoir ce que l’on a :</p>
+<ul>
+<li>Combien d’articles ?</li>
+<li>Quels journaux, et combien chacun ?</li>
+<li>Quelle période, quelle répartition dans le temps ?</li>
+</ul>
+<p><em>Pour transformer l’export HTML en tableau : <a href="https://dstool.onrender.com/">dstool</a></em></p>
+</section>
+<section id="décrire-les-processus-dans-la-méthodologie" class="slide level2">
+<h2>Décrire les processus dans la méthodologie</h2>
+
+<img data-src="img/methodopress.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="ecrire-sa-méthodologie" class="slide level2">
+<h2>Ecrire sa méthodologie</h2>
+<p>Pour votre corpus, indiquer :</p>
+<ul>
+<li>La source et la requête exacte (date de l’extraction)</li>
+<li>Les critères d’inclusion et d’exclusion</li>
+<li>Les effectifs finaux (par journal, par période)</li>
+<li>Les transformations effectuées</li>
+<li>Les limites connues (accès captif, doublons, articles tronqués…)</li>
+</ul>
+</section>
+<section id="un-idéal-régulateur-la-reproductibilité" class="slide level2">
+<h2>Un idéal régulateur : la reproductibilité</h2>
+<p><em>Etre capable de refaire le plus simplement possible toutes les étapes (souvent très itératives) entre l’idée et les résultats</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="./img/gallicagram_plot_images.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/data_science_hanbook.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="dans-lespace-public" class="slide level2">
-<h2>Dans l’espace public</h2>
-<p><strong>Associé à une réthorique de la promesse</strong></p>
-
-<img data-src="./img/promessedonnéeseurope.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:52020DC0066">Rapport</a></p></section>
-<section id="dans-les-sciences-sociales" class="slide level2">
-<h2>Dans les sciences sociales</h2>
-<p>Des formes plus spécifiques de données. <strong>Quelles sont les données habituelles que vous avez rencontré en science sociale ?</strong></p>
-<p>(A la fois des exemples précis et le type général)</p>
-<ul>
-<li>…</li>
-<li>…</li>
-</ul>
-</section>
-<section id="données-surtout-associées-à-une-spécialité" class="slide level2">
-<h2>Données surtout associées à une spécialité</h2>
-<p>Les approches dites “computationnelles”</p>
-
-<img data-src="./img/bigdata.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://theconversation.com/comment-le-big-data-revolutionne-les-sciences-sociales-261794">url</a></p></section>
-<section id="plus-généralement" class="slide level2">
-<h2>Plus généralement …</h2>
-<p><strong>Lister les différentes formes de données qui existent:</strong></p>
-<ul>
-<li>…</li>
-<li>…</li>
-</ul>
-</section>
-<section id="utiliser-ces-données-en-sciences-sociales" class="slide level2">
-<h2>Utiliser ces données en sciences sociales ?</h2>
-<p><em>Dans quelles conditions ce serait intéressant d’utiliser les données suivantes dans une enquête en sciences sociales ? Quelles sont les difficultés que vous identifierez ?</em></p>
-<ul>
-<li>Une collection de cartes d’une ville dessinées à différentes époques pendant 200 ans</li>
-<li>Un capteur d’éclairage au bord d’une route</li>
-<li>Le nombre de connexion à un site web</li>
-<li>…</li>
-</ul>
-<p><em>échapper la dichotomie quanti/quali</em></p>
-</section>
-<section id="des-spécialités-régionales-de-données" class="slide level2">
-<h2>Des spécialités “régionales” de données</h2>
-<ul>
-<li>Chaque domaine/secteur a ses données &amp; ses règles
-<ul>
-<li>Histoire/Physique/Biologie</li>
-<li>Procès/Journalistes/…</li>
-</ul></li>
-<li>Dans l’enquête interdisciplinaire
-<ul>
-<li>Déborder les délimitations habituelles</li>
-<li>Relier des pratiques différentes</li>
-<li>Se nourrir de la diversité</li>
-</ul></li>
-</ul>
-<p>Importance de forger un vocabulaire commun.</p>
-</section>
-<section id="cest-quoi-une-donnée-au-final" class="slide level2">
-<h2>C’est quoi une donnée au final ?</h2>
-<p>De nombreuses définitions</p>
-<blockquote>
-<p>Information content that is produced by accessing observable phenomena and recording, organising and storing relevant information elements from these in a digital format, which can be accessed electronically for reference or processing (OCDE, 2021)</p>
-</blockquote>
-<blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Data">“Data, as a general concept, refers to the fact that some existing information or knowledge is represented or coded in some form suitable for better usage or processing (Wikipédia).</a></p>
-</blockquote>
-</section>
-<section id="pour-nous" class="slide level2">
-<h2>Pour nous</h2>
-<p><strong>Un ensemble d’informations issues par différentes transformations de traces laissées par un phénomène empirique.</strong></p>
-<ul>
-<li>définition a-disciplinaire</li>
-<li>importance du lien avec un <strong>phénomène</strong>
-<ul>
-<li><em>la donnée n’est pas le phénomène</em></li>
-</ul></li>
-<li>des étapes intermédiaires</li>
-<li>nature de la “trace” recueillie : comment ? quoi ?</li>
-</ul>
-</section>
-<section id="data-in-data-out" class="slide level2">
-<h2>Data in, data out</h2>
-<p>De nombreuses transformations - les <strong>données brutes</strong> existent-elles?</p>
-
-<img data-src="./img/data_trap.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
-<section>
-<section id="enquêtons-notre-fil-rouge" class="title-slide slide level1 center">
-<h1>Enquêtons : notre fil rouge</h1>
-
-</section>
-<section id="comment-évolue-la-cohabitation-des-mobilités-à-paris" class="slide level2">
-<h2>Comment évolue la cohabitation des mobilités à Paris ?</h2>
-
-<img data-src="./img/accidentparis.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="lenquête-ancrée-pour-dépasser-les-stéréotypes" class="slide level2">
-<h2>L’enquête ancrée pour dépasser les stéréotypes</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/bobo.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/tension.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="quelles-sont-les-données-possibles" class="slide level2">
-<h2>Quelles sont les données possibles ?</h2>
-<p>Pour enquêter sur les cohabitations des mobilités autour du bâtiment (donc situé).</p>
-<ul>
-<li>…</li>
-<li>…</li>
-<li>…</li>
-</ul>
-</section>
-<section id="quoi-faire-avec-ces-données" class="slide level2">
-<h2>Quoi faire avec ces données ?</h2>
-<p>Comment faire pour passer à la pratique.</p>
-<ul>
-<li>Toutes ces données se valent-elles ?</li>
-<li>À quel moment ces données vont intervenir ?</li>
-<li>Quelles sont les difficultés à anticiper ?</li>
-</ul>
-</section></section>
-<section>
-<section id="comment-les-données-sont-utilisées" class="title-slide slide level1 center">
-<h1>Comment les données sont utilisées?</h1>
-
-</section>
-<section id="articulation-donnéesenquête" class="slide level2">
-<h2>Articulation données/enquête</h2>
-<p>Différents moments dans l’enquête:</p>
-<ul>
-<li><strong>Exploratoire/découverte</strong> : diversifier son rapport au monde</li>
-<li><strong>Argumentation/justification</strong> : solifier un argument</li>
-<li><strong>Illustration/communication</strong> : faciliter la transmission</li>
-</ul>
-<p><em>Pour les données précédentes, à quels moments faire intervenir ?</em></p>
-</section>
-<section id="articulation-donnéesargumentation" class="slide level2">
-<h2>Articulation données/argumentation</h2>
-<h4 id="déduction">Déduction</h4>
-<p><em>Theory-driven</em> : Théorie → hypothèse → données</p>
-<p>Les données <strong>mettent à l’épreuve</strong> une hypothèse formulée en amont</p>
-<h4 id="induction">Induction</h4>
-<p><em>Data-driven</em> Données → régularités → théorie</p>
-<p>Les résultats sont censés <strong>émerger</strong> des données</p>
-<h4 id="abduction">Abduction</h4>
-<p><em>Itératif</em> Données ⇄ concepts</p>
-<p>Allers-retours entre <strong>observations surprenantes</strong> et hypothèses</p>
-</section>
-<section id="un-processus-itératif" class="slide level2">
-<h2>Un processus itératif</h2>
-<ul>
-<li>Le lien entre question &amp; données n’est jamais immédiat</li>
-<li>Processus itératif d’opérationalisation :
-<ul>
-<li>Certaines données amènent à des questions</li>
-<li>Certaines questions amènent à chercher des données</li>
-</ul></li>
-<li>Mais
-<ul>
-<li>Certaines données n’existent pas…</li>
-</ul></li>
-</ul>
-<p>Il faut souvent accepter une certaine forme d’insatisfaction.</p>
-</section>
-<section id="se-méfier-du-mythe-du-processus-linéaire" class="slide level2">
-<h2>Se méfier du mythe du processus linéaire</h2>
-
-<img data-src="./img/dataprocess.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="est-ce-que-toutes-ces-données-se-valent" class="slide level2">
-<h2>Est-ce que toutes ces données se valent ?</h2>
-<p>Prendre au sérieux la matérialité des données</p>
-<ul>
-<li>Nature différentes</li>
-<li>Existence</li>
-<li>Accessibilité</li>
-<li>Taille</li>
-<li>Qualité</li>
-<li>Coût</li>
-<li>Confidentialité</li>
-</ul>
-</section>
-<section id="face-à-cette-diversité" class="slide level2">
-<h2>Face à cette diversité</h2>
-<p>Des savoirs spécifiques - <em>data management</em></p>
-<ul>
-<li>Comment choisir les données les plus pertinentes ?</li>
-<li>Comment les manipuler et les stocker ?</li>
-<li>Comment passer des données à des résultats ?</li>
-</ul>
-</section></section>
-<section>
-<section id="principaux-concepts" class="title-slide slide level1 center">
-<h1>Principaux concepts</h1>
-
-</section>
-<section id="corpus" class="slide level2">
-<h2>Corpus</h2>
-<p><strong>corpus</strong> (ou jeu de données) = ensemble de données reliées par une cohérence.</p>
-<p>Pourquoi ?</p>
-<ul>
-<li>Décrire un ensemble d’éléments comme un tout</li>
-<li>Situer des éléments par rapport à d’autres dans leur diversité</li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Pratiques du vélo</strong></p>
-</div>
-<div class="callout-content">
-<p>Une donnée : un entretien avec un cycliste</p>
-<p>Un corpus : des entretiens avec tous les cyclistes qui ont accepté de répondre à mes questions un samedi soir rue Rivoli</p>
-</div>
-</div>
-</div>
-</section>
-<section id="qui-dit-corpus-dit" class="slide level2">
-<h2>Qui dit corpus dit…</h2>
-<ul>
-<li>Un ensemble d’où vient le corpus : <strong>une population de référence</strong></li>
-<li>Une partie d’une population : <strong>un échantillon</strong></li>
-<li>Un processus de sélection qu’il faut renseigner</li>
-</ul>
-</section>
-<section id="produire-vs.-réutiliser-des-données" class="slide level2">
-<h2>Produire vs.&nbsp;réutiliser des données</h2>
-<ul>
-<li>Données <strong>primaires</strong>
-<ul>
-<li>construire ses données/corpus</li>
-<li>un gradient allant de la production complète à la mise en forme</li>
-</ul></li>
-<li>Données <strong>secondaires</strong>
-<ul>
-<li>données déjà constituées</li>
-<li>permet d’explorer en amont de l’enquête</li>
-<li>multiplication des données disponibles open data</li>
-</ul></li>
-<li>Entre les deux : <strong>l’explosion des traces numériques</strong>
-<ul>
-<li>accès à des bases de données/API</li>
-</ul></li>
-</ul>
-</section>
-<section id="conséquences-de-la-disponibilité" class="slide level2">
-<h2>Conséquences de la disponibilité</h2>
-<ul>
-<li>Données primaires : possible de les adapter à sa question mais vulnérabilité du protocole</li>
-<li>Données secondaires : répondent souvent à une autre question que la votre</li>
-</ul>
-<div title="Vélo &amp; Justice">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Vélo &amp; Justice</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li><a href="https://opendata.paris.fr/explore/dataset/comptage-velo-donnees-compteurs/information/?disjunctive.id_compteur&amp;disjunctive.nom_compteur&amp;disjunctive.id&amp;disjunctive.name">Les données de comptage des vélos à Paris produits par la ville</a></li>
-<li>Compter moi-même les vélos dans une rue</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="une-pragmatique-des-données" class="slide level2">
-<h2>Une pragmatique des données</h2>
-<p>De nombreux <strong>arbitrages</strong></p>
-<ul>
-<li>Balance coût / avantage de l’accès à des données</li>
-<li>Adéquation avec les objets de la question</li>
-<li>Adéquation avec la nature de la question</li>
-<li>Facilité de retransformer les données</li>
-<li>Disponibilités des méthodes d’analyse pour obtenir un résultat</li>
-</ul>
-</section>
-<section id="difficulté-daccès-aux-données" class="slide level2">
-<h2>Difficulté d’accès aux données</h2>
-<ul>
-<li>Le coût des données :
-<ul>
-<li>ces données peuvent déjà exister 👍</li>
-<li>peuvent être collectées avec un effort raisonnable 💪</li>
-<li>sont couteuses à récolter 👎</li>
-</ul></li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Des choix à faire</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Réaliser ma propre enquête par questionnaire, avec mes questions spécifiques</li>
-<li>Utiliser les données publiques disponibles à l’échelle des villes</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="la-représentativité" class="slide level2">
-<h2>La représentativité</h2>
-<p>Avoir <strong>beaucoup</strong> de données ≠ avoir des données <strong>représentatives</strong></p>
-<blockquote>
-<p>Un corpus est représentatif lorsqu’il reproduit, sur les dimensions pertinentes pour l’enquête, la structure d’une <strong>population de référence</strong>.</p>
-</blockquote>
-<p>Toujours se demander : <strong>représentatif de quoi ?</strong> et <strong>sur quelles dimensions ?</strong></p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><strong>Postulée</strong></p>
-<p>Affirmée sans vérification (fréquent, fragile)</p>
-</div><div class="column" style="width:33%;">
-<p><strong>Contrôlée</strong></p>
-<p>Comparée à une source externe (recensement, registre…)</p>
-</div><div class="column" style="width:33%;">
-<p><strong>Discutée</strong></p>
-<p>Biais identifiés et effets sur les résultats explicités</p>
-</div></div>
-</section>
-<section id="ces-corpus-sont-ils-représentatifs" class="slide level2">
-<h2>Ces corpus sont-ils représentatifs ?</h2>
-<ul>
-<li>Si je vous interroge sur votre consommation de séries, est-ce que c’est représentatif de la population française ?</li>
-<li>Des étudiants français ?</li>
-<li>Si je prends toutes les photos prises par les touristes d’un monument est-ce que je peux identifier la diversité des points de vue du bâtiment ?</li>
-<li>Si je prends tous les articles parus sur une semaine sur la question du vélo à Paris, est-ce que c’est représentatif de l’avis des français sur la question ?</li>
-<li>De la production journalistique ?</li>
-</ul>
-</section>
-<section id="vérifier-la-représentativité-spécificités" class="slide level2">
-<h2>Vérifier la représentativité : spécificités</h2>
-<p>Les stratégies de représentativité dépendent des domaines. <em>Pour les mesures numériques sur des populations, des méthodes sont formalisées en statistique.</em></p>
-<p>Une règle générique : <em>Définir l’entité (population, grandeur, etc.) à représenter et le passage du corpus à cette entité.</em></p>
-<p>Comment faire en pratique ?</p>
-<ul>
-<li>Entre méthodes &amp; bricolage</li>
-<li>Important de justifier/mettre en discussion.</li>
-</ul>
-</section></section>
-<section>
-<section id="avec-quelles-données-commencer" class="title-slide slide level1 center">
-<h1>Avec quelles données commencer</h1>
-
-</section>
-<section id="des-données-accessibles" class="slide level2">
-<h2>Des données “accessibles”</h2>
-<ul>
-<li>Toute enquête se pose la question:
-<ul>
-<li>De l’espace public</li>
-<li>De la production des connaissances</li>
-</ul></li>
-<li>Avec quelques manières de les utiliser
-<ul>
-<li>Ce point sera traité dans une séance ultérieure plus en détail</li>
-</ul></li>
-</ul>
-<p><strong>Il n’y a pas vraiment de limites, n’hésitez pas à être créatifs</strong></p>
-</section>
-<section id="documenter-lespace-public-la-presse" class="slide level2">
-<h2>Documenter l’espace public : la presse</h2>
-<p>L’article de presse comme contenu complexe :</p>
-<ul>
-<li>date (évolution temporelle)</li>
-<li>contenu textuel (sujets)</li>
-<li>cadre : journal, journaliste, …</li>
-</ul>
-<p>Permet une diversité d’approches :</p>
-<ul>
-<li>l’article individuel comme source</li>
-<li>corpus d’articles sur un sujet/période
-<ul>
-<li>thèmes abordés</li>
-<li>acteurs récurrents</li>
-<li>évolutions temporelles</li>
-</ul></li>
-</ul>
-</section>
-<section id="exemple-danalyse-de-la-presse" class="slide level2 center">
-<h2>Exemple d’analyse de la presse</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/datapress.png" height="700"></p>
-<figcaption><a href="https://www.sciencedirect.com/science/article/pii/S0001457515300981">Référence</a></figcaption>
+<p><img data-src="./img/reproducibility.jpg" class="quarto-figure quarto-figure-center" height="450"></p>
 </figure>
 </div>
 </section>
-<section id="accès-captifs" class="slide level2">
-<h2>Accès captifs</h2>
-<p>Une presse sous droit d’auteur.</p>
+<section id="concrètement-pour-vous" class="slide level2">
+<h2>Concrètement, pour vous</h2>
 <ul>
-<li>Par des outils dédiés comme <a href="https://shiny.ens-paris-saclay.fr/app/gallicagram">Gallicagram</a></li>
-<li>Par l’interface de portails comme <a href="">Europresse</a></li>
-<li>Certains médias sont libres</li>
+<li>Un dossier par projet, avec <code>brut/</code>, <code>travail/</code>, <code>resultats/</code></li>
+<li>Les données brutes ne sont jamais modifiées</li>
+<li>Un journal de bord : date, ce qui a été fait, pourquoi</li>
+<li>Les fichiers nommés par date et contenu, pas <code>final_v3_ok.xlsx</code></li>
 </ul>
-</section>
-<section id="cadrage-dune-tendance" class="slide level2">
-<h2>Cadrage d’une tendance</h2>
-
-<img data-src="./img/gallicagram.png" class="r-stretch"></section>
-<section id="construire-et-extraire-un-corpus-deuropresse" class="slide level2">
-<h2>Construire et extraire un corpus d’Europresse</h2>
-<p><a href="https://catalogue-bibliotheque.sciencespo.fr/view/action/uresolver.do?operation=resolveService&amp;package_service_id=19173791340005808&amp;institutionId=5808&amp;customerId=5800&amp;VE=true">Accès Europresse à des données payantes</a></p>
-<div title="Vélo &amp; Justice">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Vélo &amp; Justice</strong></p>
-</div>
-<div class="callout-content">
-<p>Comment aborde-t-on la question des inégalités quand on parle du vélo en région parisienne ?</p>
-</div>
-</div>
-</div>
-</div>
-<p>Le contour du corpus :</p>
-<ul>
-<li>Définir la période</li>
-<li>Définir les mots-clés</li>
-<li>Définir les journaux concernés
-<ul>
-<li>Se concentrer sur un journal</li>
-<li>Sur un bouquet?</li>
-</ul></li>
-</ul>
-</section>
-<section id="construire-des-requêtes" class="slide level2">
-<h2>Construire des requêtes</h2>
-<ul>
-<li>Chaque interface est organisé avec des règles</li>
-<li>Lire les résultats</li>
-<li>Ne pas hésiter à combiner les éléments</li>
-<li>Viser un nombre réaliste de résultats</li>
-</ul>
-</section>
-<section id="consulter-vs.-conserver" class="slide level2">
-<h2>Consulter vs.&nbsp;conserver</h2>
-<p>Possibilité de consulter sur Europresse. Mais comment conserver ?</p>
-<ul>
-<li>Collecter à la main vs.&nbsp;télécharger</li>
-<li>Des transformations nécessaires</li>
-</ul>
-<p>Puis aller vers l’analyse :</p>
-<ul>
-<li>Descriptive : compter</li>
-<li>Plus avancée</li>
-<li>Visualisations</li>
-</ul>
-<div title="Statut des données">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Statut des données</strong></p>
-</div>
-<div class="callout-content">
-<p>Ce sont des données sous droit d’auteur. Leur usage est très réglementé. Il y a une tolérance pour la recherche mais il est interdit des diffuser.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-
-<img data-src="./img/europresse.png" class="r-stretch"></section>
-<section id="mettre-en-forme-les-données" class="slide level2">
-<h2>Mettre en forme les données</h2>
-<ul>
-<li>Délimiter le corpus</li>
-<li>Téléchargement sous un format HTML
-<ul>
-<li>Gérer la limite</li>
-</ul></li>
-<li>Des fichiers HTML à dater + un document de métadonnées</li>
-<li><a href="https://dstool.onrender.com/">Transformer en un document tabulaire</a></li>
-</ul>
-</section>
-<section id="étendre-le-domaine-de-la-presse" class="slide level2">
-<h2>Étendre le domaine de la presse</h2>
-<p>Europresse n’est pas le seul portail sur lequel collecter des données.</p>
-<p>Suivant la question :</p>
-<ul>
-<li>se concentrer sur les articles parus sur un site spécifique spécialisé</li>
-<li>récupérer les newsletters d’une organisation</li>
-</ul>
-<div title="Statut des données">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Statut des données</strong></p>
-</div>
-<div class="callout-content">
-<p>Récupérer les évènements de la FUB pour voir lesquels mentionnent la question de la justive : https://www.fub.fr/fub/actualites</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="la-difficile-question-des-médias-sociaux" class="slide level2">
-<h2>La difficile question des médias sociaux</h2>
-<ul>
-<li>Une source riche d’échanges</li>
-<li>Mais de plus en plus fermés (Twitter, Insta, etc.)
-<ul>
-<li>Difficulté de collecter massiviement</li>
-<li>Possibilités de constituer des petits corpus</li>
-</ul></li>
-</ul>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S038611121730211X">Das, Subasish, et al.&nbsp;“Extracting patterns from Twitter to promote biking.” IATSS research 43.1 (2019): 51-59.</a></p>
-</section>
-<section id="les-productions-scientifiques" class="slide level2">
-<h2>Les productions scientifiques</h2>
-<ul>
-<li>Depuis plus de 50 ans, des bases de méta-données</li>
-<li>L’étude de ces publications scientifiques permet :
-<ul>
-<li>De suivre l’évolution des thèmes</li>
-<li>D’identifier les acteurs clés du monde scientifique</li>
-<li>De reconstituer les communautés</li>
-</ul></li>
-</ul>
-<p><a href="https://openalex.org/">OpenAlex</a></p>
-<p><a href="https://www-scopus-com.acces-distant.sciencespo.fr/search/form.uri?display=basic#basic">Scopus par la bibliothèque de sciencespo</a></p>
-<!--
-
-
----
-
-## Encore une fois, la clé est le corpus
-
-Comment délimiter un corpus pertinent :
-
-- Approche biographique
-    - Se concenter sur un auteur
-- Approche thématique
-    - Identifier un thème
-- Approche institutionnelle
-
-Ne pas hésiter à viser des petits corpus & à lire quelques articles
-
----
-
-## Récupérer les données
-
-Une fois le corpus délimité, enjeu de récupérer les données
-
-- Select > Export
-- Format CSV ou Plain text
-
-Permet l'analyse ensuite
-
----
-
-## Autres sources
-
-- Web Of Science
-- Sources ouvertes
-    - [HAL](https://hal.science/)
-    - [ArXiv](https://arxiv.org/)
-- ...
-
----
-
-
--->
 </section></section>
 <section>
-<section id="des-corpus-déjà-existants" class="title-slide slide level1 center">
-<h1>Des corpus déjà existants</h1>
+<section id="quest-ce-quanalyser-méthodes-et-outils" class="title-slide slide level1 center">
+<h1>Qu’est-ce qu’analyser ? Méthodes et outils</h1>
 
 </section>
-<section id="statistiques-publiques" class="slide level2">
-<h2>Statistiques publiques</h2>
-<p>L’INSEE rend disponible de nombreuses données</p>
+<section id="analyser-cest-quoi" class="slide level2">
+<h2>Analyser, c’est quoi ?</h2>
+<p>Passer de données à des résultats qui répondent à une question</p>
 <ul>
-<li>Notamment <a href="https://catalogue-donnees.insee.fr/fr/catalogue/recherche">Catalogue des données de l’INSEE</a></li>
-<li>Agrégées et à différents niveaux spatial (ville, IRIS)</li>
+<li><strong>Décrire</strong> : combien, quand, où, qui (comptages, distributions)</li>
+<li><strong>Regrouper</strong> : agréger à différents niveaux</li>
+<li><strong>Comparer</strong> : entre journaux, entre périodes, entre acteurs</li>
+<li><strong>Modéliser</strong> : identifier des tendances</li>
 </ul>
-<p>(ça vaut le coup de creuser un peu)</p>
-<div title="Vélo &amp; Justice">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Vélo &amp; Justice</strong></p>
-</div>
-<div class="callout-content">
-<p><a href="https://www.insee.fr/fr/statistiques/7630376">Mobilités professionnelles en 2020 : déplacements domicile - lieu de travail Recensement de la population - Base flux de mobilité</a></p>
-<ul>
-<li>voir la structure des données</li>
-<li>jeter un coup d’oeil sur les données</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+<p><em>Toute analyse réduit l’information : c’est son intérêt et sa limite</em></p>
 </section>
-<section id="que-faire-avec-ces-données" class="slide level2">
-<h2>Que faire avec ces données</h2>
-<ul>
-<li>Distributions nationales :
-<ul>
-<li>répartitions géographiques</li>
-<li>recalculer des statistiques pour des échnatillons</li>
-<li>faire des cartes</li>
-</ul></li>
-<li>Recours à des logiciels statistiques
-<ul>
-<li>Excel, Jamovi</li>
-<li>R, Python</li>
-</ul></li>
-</ul>
-<div title="Avant de faire de l'analyse">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Avant de faire de l’analyse</strong></p>
-</div>
-<div class="callout-content">
-<p>Prendre le temps de regarder les données et réfléchir en amont sur les traitements envisagés</p>
-</div>
-</div>
-</div>
-</div>
+<section id="de-la-question-à-lopération" class="slide level2">
+<h2>De la question à l’opération</h2>
+<p>Une question n’est pas directement analysable : il faut la traduire</p>
+<p><em>C’est cette traduction, l’<strong>opérationnalisation</strong>, qui est le cœur du travail</em></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Opération concrète</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Le propos est-il politisé ?</td>
+<td>Repérer dans chaque article les acteurs politiques cités</td>
+</tr>
+<tr class="even">
+<td>Qui est mis en avant ?</td>
+<td>Classer chaque article selon le cadrage</td>
+</tr>
+<tr class="odd">
+<td>Les journaux en parlent-ils pareil ?</td>
+<td>Comparer le vocabulaire par journal</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="documenter-les-attitudes-pratiques-les-sondages" class="slide level2">
-<h2>Documenter les attitudes &amp; pratiques : les sondages</h2>
-<p>Que pensent les individus ? Que disent-ils de leurs pratiques ?</p>
+<section id="distinguer-méthodes-et-outils" class="slide level2">
+<h2>Distinguer méthodes et outils</h2>
+<p>Données + traitements → résultats</p>
 <ul>
-<li>Les sondages sont devenus une source importante de connaisance des comportements sociaux</li>
-<li>Des producteurs très différents (Chercheurs, associations, …)</li>
-<li>De plus en plus de données disponibles
+<li>Un <strong>traitement</strong> : une méthode, descriptible indépendamment de tout logiciel</li>
+<li>Un <strong>outil</strong> : un logiciel qui permet de mettre en œuvre la méthode</li>
+</ul>
+<p><strong>Un même traitement, plusieurs outils</strong> : coder thématiquement des articles peut se faire avec un surligneur, un tableur, QualCoder ou un script Python</p>
+<p><strong>Un même outil, plusieurs traitements</strong> : un tableur sert à coder, à compter, à faire des graphiques, à gérer une bibliographie</p>
+</section>
+<section id="pourquoi-cette-distinction-compte" class="slide level2">
+<h2>Pourquoi cette distinction compte</h2>
 <ul>
-<li>Recherche : <a href="https://data.progedo.fr/">https://data.progedo.fr/</a></li>
-<li>Autres acteurs : par exemple <a href="https://opendata.parlons-velo.fr/">https://opendata.parlons-velo.fr/</a></li>
-</ul></li>
+<li>Dans un travail, on décrit la méthode <strong>et</strong> l’outil</li>
+<li>La méthode est liée à la conceptualisation</li>
+<li>L’outil est lié à la condition de réalisation</li>
+</ul>
+<p>Choisir d’abord la méthode, ensuite l’outil (et pas l’inverse)</p>
+</section>
+<section id="des-logiciels-pour-lanalyse-quatre-philosophies" class="slide level2">
+<h2>Des logiciels pour l’analyse : quatre philosophies</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Philosophie</th>
+<th>Principe</th>
+<th>Exemple aujourd’hui</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Générique</strong></td>
+<td>Un outil à tout faire, la méthode vient de vous</td>
+<td>Tableur</td>
+</tr>
+<tr class="even">
+<td><strong>Métier</strong></td>
+<td>Une boîte à outils pour une famille de pratiques</td>
+<td>QualCoder (CAQDAS)</td>
+</tr>
+<tr class="odd">
+<td><strong>Spécialisé</strong></td>
+<td>Quelques traitements précis, très encadrés</td>
+<td>Iramuteq</td>
+</tr>
+<tr class="even">
+<td><strong>Programmation</strong></td>
+<td>Formaliser chaque étape par du code</td>
+<td>Python, R</td>
+</tr>
+</tbody>
+</table>
+<p><em>Plus on va vers le bas, plus c’est reproductible, et plus c’est long à apprendre</em></p>
+</section>
+<section id="de-nombreux-outils-à-votre-disposition" class="slide level2">
+<h2>De nombreux outils à votre disposition</h2>
+<p><em>Privilégier les outils open source</em></p>
+<ul>
+<li><strong>Tableurs</strong> (LibreOffice, Google Sheets, Excel) : organiser, coder, compter</li>
+<li><strong>Jamovi</strong> : statistiques</li>
+<li><strong>QualCoder</strong> : annoter des textes (entretiens, articles)</li>
+<li><strong>Iramuteq</strong> : lexicométrie</li>
+<li><strong>Magrit</strong> ou <strong>Khartis</strong> : réaliser des cartes</li>
+<li><strong>VOSviewer</strong> : cartographie de données scientométriques</li>
+<li><strong>Gephi</strong> : analyse de réseaux</li>
+<li><strong>Python</strong> ou <strong>R</strong> : scripts</li>
+</ul>
+<p><em>Des sessions studio sur plusieurs d’entre eux</em></p>
+</section>
+<section id="comment-choisir-un-outil" class="slide level2">
+<h2>Comment choisir un outil ?</h2>
+<ul>
+<li>Est-ce qu’il fait la méthode dont j’ai besoin ?</li>
+<li>Quel format en entrée, quel format en sortie ?</li>
+<li>Combien de temps pour l’apprendre ?</li>
+<li>Est-ce que je pourrai refaire la même chose dans six mois ?</li>
+<li>Est-il libre, gratuit, encore maintenu ?</li>
+<li>Est-ce que je comprends ce qu’il fait ?</li>
 </ul>
 </section>
-<section id="entrepots-de-données" class="slide level2">
-<h2>Entrepots de données</h2>
-<p><a href="https://data.gouv.fr/">https://data.gouv.fr/</a></p>
+<section id="et-lia-générative" class="slide level2">
+<h2>Et l’IA générative ?</h2>
+<ul>
+<li>Un <strong>outil</strong>, pas une méthode : ChatGPT ne sait pas quelle question vous posez</li>
+<li>Utile pour : reformuler une grille, suggérer des catégories, annoter en volume</li>
+<li>Risqué pour : coder à votre place sans règles explicites, inventer des régularités</li>
+<li>Dans tous les cas : vérifier sur un échantillon, documenter l’usage</li>
+</ul>
+<p><em>Même exigence que pour tout outil : savoir ce qu’il fait aux données</em></p>
+</section></section>
+<section>
+<section id="trois-approches" class="title-slide slide level1 center">
+<h1>Trois approches</h1>
 
-<img data-src="./img/opendata.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="une-diversité-dautres-sources" class="slide level2">
-<h2>Une diversité d’autres sources</h2>
+</section>
+<section id="coder-des-articles-avec-un-tableur" class="slide level2">
+<h2>1. Coder des articles avec un tableur</h2>
+<p><strong>Question</strong> : comment est traité l’accident mortel impliquant le cycliste Paul Varry ?</p>
 <ul>
-<li><a href="https://donnees.banquemondiale.org/">Banque mondiale</a></li>
-<li><a href="https://www.oecd.org/en/data.html">OECD</a></li>
+<li>L’accident est-il cadré comme politique ou non ?</li>
+<li>Qui est considéré comme responsable ?</li>
+<li>Les enjeux d’urbanisme et d’aménagement sont-ils mentionnés ?</li>
+</ul>
+<p><strong>Unité d’analyse</strong> : l’article (une ligne = un article)</p>
+</section>
+<section id="passer-des-articles-à-un-tableau" class="slide level2">
+<h2>Passer des articles à un tableau</h2>
+
+<img data-src="img/tableur.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-grille-de-codage" class="slide level2">
+<h2>La grille de codage</h2>
+<p>Chaque question devient une <strong>variable</strong> avec des <strong>modalités</strong> et une <strong>règle</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Modalités</th>
+<th>Règle d’application</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cadrage</td>
+<td>politique / fait divers / mixte</td>
+<td>Politique si un élu ou une politique publique est cité</td>
+<td>“La maire a réagi…” → politique</td>
+</tr>
+<tr class="even">
+<td>responsable</td>
+<td>cycliste / conducteur / infrastructure / non dit</td>
+<td>Ce que l’article affirme, pas ce que vous pensez</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>urbanisme</td>
+<td>oui / non</td>
+<td>Mention d’aménagement, piste, voirie</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Ajouter toujours : identifiant, journal, date, et une colonne “remarques”</em></p>
+</section>
+<section id="organiser-le-processus" class="slide level2">
+<h2>Organiser le processus</h2>
+<ol type="1">
+<li>Prendre le temps de lire ses données</li>
+<li>Développer la grille de codage
+<ul>
+<li><strong>Cible</strong> : quelle entité annotée (article, paragraphe, phrase…)</li>
+<li><strong>Codage</strong> : catégories et règles pour les appliquer</li>
+</ul></li>
+<li>Produire un tableau adapté</li>
+<li>Coder une dizaine d’articles pour tester la grille, et la corriger</li>
+<li>Coder l’ensemble du corpus</li>
+<li>Faire des comptages et des croisements</li>
+</ol>
+</section>
+<section id="le-test-de-la-grille-coder-à-deux" class="slide level2">
+<h2>Le test de la grille : coder à deux</h2>
+<ul>
+<li>Deux personnes codent les mêmes dix articles sans se concerter</li>
+<li>Comparer : où sont les désaccords ?</li>
+<li>Un désaccord n’est pas une erreur, c’est une règle manquante</li>
+<li>Réécrire la règle, recoder, recomparer</li>
+</ul>
+<p><em>En groupe, c’est votre principal garde-fou</em></p>
+</section>
+<section id="résultat-attendu" class="slide level2">
+<h2>Résultat attendu</h2>
+<p>Un tableau croisé, par exemple cadrage × journal</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Journal A</th>
+<th>Journal B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Politique</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>Fait divers</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>Mixte</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Comptages et pourcentages suffisent souvent</li>
+<li>Possibilité d’aller plus loin (studio Jamovi)</li>
+</ul>
+</section>
+<section id="forces-et-limites-du-tableur" class="slide level2">
+<h2>Forces et limites du tableur</h2>
+<p><strong>Forces</strong></p>
+<ul>
+<li>Flexible, connu de tous, lisible par n’importe qui</li>
+<li>Parfait pour des catégories fermées sur des unités entières</li>
+</ul>
+<p><strong>Limites</strong></p>
+<ul>
+<li>Aucune discipline imposée : la rigueur vient de vous</li>
+<li>On perd le lien avec le texte : impossible de retrouver <em>le passage</em> qui justifie un code</li>
+<li>Difficile quand les catégories émergent en cours de route</li>
+</ul>
+</section>
+<section id="coder-des-passages-avec-un-caqdas" class="slide level2">
+<h2>2. Coder des passages avec un CAQDAS</h2>
+<p><strong>Question</strong> : dans le cadre des entretiens, comment les cyclistes rencontrés parlent de la cohabitation sur la route et des moments de violence</p>
+<p><strong>Unité d’analyse</strong> : le passage (quelques mots à quelques phrases)</p>
+</section>
+<section id="ce-qui-change-par-rapport-au-tableur" class="slide level2">
+<h2>Ce qui change par rapport au tableur</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Tableur</th>
+<th>CAQDAS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ce qu’on code</td>
+<td>L’article entier</td>
+<td>Des segments de texte</td>
+</tr>
+<tr class="even">
+<td>Les codes</td>
+<td>Fixés à l’avance</td>
+<td>Peuvent émerger, se réorganiser</td>
+</tr>
+<tr class="odd">
+<td>Ce qu’on retrouve</td>
+<td>Un comptage</td>
+<td>Tous les extraits portant un code</td>
+</tr>
+<tr class="even">
+<td>Résultat type</td>
+<td>Tableau croisé</td>
+<td>Comparaison d’extraits, mémos</td>
+</tr>
+</tbody>
+</table>
+<p><em>Le CAQDAS garde le lien entre le code et le texte</em></p>
+</section>
+<section id="coder-des-documents-qualitatifs" class="slide level2">
+<h2>Coder des documents qualitatifs</h2>
+<p>Identifier dans des documents des passages sur certains sujets</p>
+<ul>
+<li>Cas le plus fréquent : les entretiens. <a href="https://logiquali-41533a.gitpages.huma-num.fr/">Petit rappel de la méthodologie de codage des entretiens LogiQuali</a></li>
+<li>Mais s’applique à tous les contenus (articles, textes, voire images)</li>
+<li>Deux logiques : codes définis à l’avance (<strong>déductif</strong>) ou construits en lisant (<strong>inductif</strong>), souvent les deux</li>
+</ul>
+</section>
+<section id="caqdas-qualcoder" class="slide level2">
+<h2>CAQDAS : QualCoder</h2>
+<p>Les CAQDAS sont des outils informatiques dédiés à la gestion, au codage et à l’analyse de données qualitatives. <a href="https://qualcoder.org/doc/fr/">QualCoder</a> est un logiciel open source.</p>
+
+<img data-src="img/qualcoder.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="démarrer-avec-qualcoder" class="slide level2">
+<h2>Démarrer avec QualCoder</h2>
+<ul>
+<li>Créer un projet (un seul fichier pour tout)</li>
+<li>Importer les documents (un article = un document, ou un fichier texte par article)</li>
+<li>Créer sa grille de codes : <code>description_cycliste</code>, <code>description_conducteur</code>, et des sous-codes (âge, profession, prénom, état…)</li>
+<li>Annoter les textes en sélectionnant des passages</li>
+<li>Ecrire des <strong>mémos</strong> : ce que l’on remarque en codant</li>
+<li>Extraire : tous les passages d’un code, les cooccurrences, les comptages par document</li>
+</ul>
+</section>
+<section id="en-direct-qualcoder" class="slide level2">
+<h2>En direct : QualCoder</h2>
+<ul>
+<li>Importer deux entretiens</li>
+<li>Créer les deux codes principaux</li>
+<li>Coder ensemble</li>
+<li>Afficher tous les extraits d’un code côte à côte</li>
+</ul>
+</section>
+<section id="résultat-attendu-1" class="slide level2">
+<h2>Résultat attendu</h2>
+<ul>
+<li>Pas d’abord des statistiques : une <strong>comparaison argumentée</strong> d’extraits</li>
+<li>Puis éventuellement des comptages : combien d’entretiens sur un thème
+<ul>
+<li>Puis par cartégorie d’entretiens</li>
+</ul></li>
+<li>Des mémos qui deviennent les paragraphes de votre analyse</li>
+</ul>
+</section>
+<section id="forces-et-limites-du-caqdas" class="slide level2">
+<h2>Forces et limites du CAQDAS</h2>
+<p><strong>Forces</strong></p>
+<ul>
+<li>On peut toujours remonter au texte</li>
+<li>Adapté aux catégories qui se construisent en lisant</li>
+<li>Fait pour les entretiens, les articles, les documents longs</li>
+</ul>
+<p><strong>Limites</strong></p>
+<ul>
+<li>Demande d’apprendre le logiciel</li>
+<li>Codage long : pas adapté à des centaines de documents</li>
+<li>Le risque de se perdre dans les codes sans jamais conclure</li>
+</ul>
+</section>
+<section id="faire-parler-le-vocabulaire-la-lexicométrie" class="slide level2">
+<h2>3. Faire parler le vocabulaire : la lexicométrie</h2>
+<p><strong>Question</strong> : quels grands thèmes structurent la couverture médiatique sur le vélo et varient-ils selon les journaux ?</p>
+<p><strong>Unité d’analyse</strong> : les mots et les segments de texte, pour tout le corpus d’un coup</p>
+</section>
+<section id="lexicométrie" class="slide level2">
+<h2>Lexicométrie</h2>
+<p>Lexicométrie = analyser les textes comme des ensembles de mots</p>
+<ul>
+<li>Compter des occurrences</li>
+<li>Identifier la similarité entre des textes/des segments</li>
+<li>Faire apparaître des régularités à l’échelle du corpus entier</li>
+</ul>
+<p><strong>Le pari</strong> : on perd le contexte de chaque phrase, on gagne la systématicité sur tout le corpus</p>
+</section>
+<section id="iramuteq" class="slide level2">
+<h2><a href="https://www.iramuteq.org/">Iramuteq</a></h2>
+<p>La boite à outils de l’analyse lexicométrique (interface à R)</p>
+
+<img data-src="img/iramuteq.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="préparer-le-corpus-pour-iramuteq" class="slide level2">
+<h2>Préparer le corpus pour Iramuteq</h2>
+<p>Un seul fichier texte, avec une ligne d’en-tête par article :</p>
+<pre><code>**** *journal_lemonde *annee_2024
+Texte de l'article...
+
+**** *journal_leparisien *annee_2024
+Texte de l'article suivant...</code></pre>
+<ul>
+<li>Les <strong>variables étoilées</strong> permettent les comparaisons (journal, année)</li>
+<li>Nettoyer : pas de caractères spéciaux dans les variables, pas d’étoiles dans le texte</li>
+<li>Iramuteq <strong>lemmatise</strong> : “accidents”, “accident” → <em>accident</em></li>
+</ul>
+<p><em>dstool produit ce format depuis l’export Europresse</em></p>
+</section>
+<section id="les-analyses-disponibles" class="slide level2">
+<h2>Les analyses disponibles</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Analyse</th>
+<th>Ce qu’elle répond</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistiques textuelles</td>
+<td>Quels mots, combien, longueur des textes</td>
+</tr>
+<tr class="even">
+<td>Spécificités</td>
+<td>Quels mots sont sur-employés par un journal, une année</td>
+</tr>
+<tr class="odd">
+<td>Classification (Reinert)</td>
+<td>Quels groupes de segments se ressemblent : les <strong>thèmes</strong></td>
+</tr>
+<tr class="even">
+<td>Analyse de similitude</td>
+<td>Quels mots apparaissent ensemble</td>
+</tr>
+</tbody>
+</table>
+<p><em>Pour notre question : la classification pour les thèmes, les spécificités pour les journaux</em></p>
+</section>
+<section id="en-direct-iramuteq" class="slide level2">
+<h2>En direct : Iramuteq</h2>
+<ul>
+<li>Charger le corpus</li>
+<li>Statistiques textuelles : les mots les plus fréquents</li>
+<li>Lancer une classification</li>
+<li>Lire ensemble le dendrogramme</li>
+</ul>
+</section>
+<section id="lire-une-classification" class="slide level2">
+<h2>Lire une classification</h2>
+<ul>
+<li>Chaque <strong>classe</strong> est un groupe de segments partageant du vocabulaire</li>
+<li>Pour chaque classe : les mots les plus caractéristiques, et des segments typiques</li>
+<li><strong>Nommer</strong> la classe est votre travail : le logiciel ne connaît pas les thèmes</li>
+<li>Regarder quelles variables (journal, année) sont associées à chaque classe</li>
+<li>Toujours revenir aux textes : relire des segments de la classe avant de la nommer</li>
+</ul>
+</section>
+<section id="forces-et-limites-de-la-lexicométrie" class="slide level2">
+<h2>Forces et limites de la lexicométrie</h2>
+<p><strong>Forces</strong></p>
+<ul>
+<li>Traite tout le corpus d’un coup, sans lecture exhaustive préalable</li>
+<li>Fait apparaître des structures qu’on n’aurait pas cherchées</li>
+<li>Comparaisons systématiques entre sous-corpus</li>
+</ul>
+<p><strong>Limites</strong></p>
+<ul>
+<li>Il faut assez de texte (quelques dizaines d’articles au minimum)</li>
+<li>Les classes ne sont pas des thèmes tant qu’on ne les a pas interprétées (non supervisé)</li>
+<li>Un mot compté n’est pas un sens : “responsable” peut dire des choses opposées</li>
+</ul>
+</section></section>
+<section>
+<section id="synthèse" class="title-slide slide level1 center">
+<h1>Synthèse</h1>
+
+</section>
+<section id="trois-questions-trois-outils-un-même-corpus" class="slide level2">
+<h2>Trois questions, trois outils, un même corpus</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Tableur</th>
+<th>QualCoder</th>
+<th>Iramuteq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Unité</strong></td>
+<td>Article</td>
+<td>Passage</td>
+<td>Mot / segment</td>
+</tr>
+<tr class="even">
+<td><strong>Catégories</strong></td>
+<td>Fixées avant</td>
+<td>Construites en codant</td>
+<td>Produites par le calcul</td>
+</tr>
+<tr class="odd">
+<td><strong>Lecture du corpus</strong></td>
+<td>Intégrale</td>
+<td>Intégrale, attentive</td>
+<td>Partielle, guidée</td>
+</tr>
+<tr class="even">
+<td><strong>Résultat</strong></td>
+<td>Tableau croisé</td>
+<td>Extraits comparés</td>
+<td>Classes et spécificités</td>
+</tr>
+<tr class="odd">
+<td><strong>Taille adaptée</strong></td>
+<td>Dizaines à centaines</td>
+<td>Dizaines</td>
+<td>Centaines et plus</td>
+</tr>
+<tr class="even">
+<td><strong>Philosophie</strong></td>
+<td>Générique</td>
+<td>Métier</td>
+<td>Spécialisé</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ce-que-ça-montre" class="slide level2">
+<h2>Ce que ça montre</h2>
+<ul>
+<li>La question commande la méthode, la méthode commande l’outil</li>
+<li>Les trois peuvent être <strong>complémentaires</strong> : repérer des thèmes avec Iramuteq, puis coder finement avec QualCoder, puis compter avec un tableur</li>
+<li>Aucune ne dispense de lire</li>
+<li>Le choix dépend aussi de la faisabilité : temps, taille du corpus, compétences du groupe</li>
+</ul>
+</section>
+<section id="données-analyses" class="slide level2">
+<h2>Données &amp; analyses</h2>
+<ul>
+<li>Des bonnes pratiques génériques pour les données (documentation, conservation)</li>
+<li>Décrire le corpus est déjà une analyse</li>
+<li>Relation entre question, données, méthode et outil</li>
+<li>Des savoirs spécialisés nécessaires pour certaines analyses</li>
+<li>Équilibre à trouver entre complexité des analyses et faisabilité</li>
+</ul>
+<p><em>Des sessions studio pour approfondir des données/logiciels spécifiques</em></p>
+</section>
+<section id="pour-le-rendu-intermédiaire" class="slide level2">
+<h2>Pour le rendu intermédiaire</h2>
+<p>Pour votre enquête, un document court qui précise :</p>
+<ol type="1">
+<li><strong>Un corpus</strong> décrit : source, requête ou protocole, effectifs, période</li>
+<li><strong>Une question</strong> à laquelle ce corpus peut répondre</li>
+<li><strong>Une méthode</strong> : l’opération concrète (coder quoi, comparer quoi)</li>
+<li><strong>Un outil</strong> choisi, et pourquoi</li>
+<li><strong>Un test</strong> : la méthode appliquée à une dizaine d’éléments, et ce que ça change à la grille</li>
+</ol>
+</section>
+<section id="aller-plus-loin-combiner" class="slide level2">
+<h2>Aller plus loin : combiner</h2>
+<p>Possibilité de complexifier l’analyse en combinant des sources de données</p>
+
+<img data-src="img/articlevelo2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="aller-plus-loin-trianguler" class="slide level2">
+<h2>Aller plus loin : trianguler</h2>
+<p><em>La triangulation : examiner sous plusieurs angles conceptuels, sources de données ou méthodes</em></p>
+<p><strong>Objectif : Renforcer la validité</strong></p>
+<ul>
+<li>Observations directes + témoignages (entretiens)</li>
+<li>Entretiens + mesures</li>
+<li>Médias traditionnels + médias sociaux</li>
 <li>…</li>
 </ul>
-<p>Avoir une conception ouverte de ce qui peut constituer une donnée utile</p>
-</section>
-<section id="sadapter-au-corpus" class="slide level2">
-<h2>S’adapter au corpus</h2>
-<ul>
-<li>une structure/des contenus très variables</li>
-<li>une qualité variable</li>
-<li>ne jamais hésiter à explorer</li>
-</ul>
-<div title="Vélo &amp; Justice">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Vélo &amp; Justice</strong></p>
-</div>
-<div class="callout-content">
-<p><a href="https://www.data.gouv.fr/fr/datasets/statistiques-de-subventions-dachat-de-velo-en-ile-de-france/">Statistiques de subventions d’achat de vélo en Île-de-France</a></p>
-<ul>
-<li>Distribution par villes</li>
-<li>A rapporter aux données INSEE ?</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="collecter-vos-propres-données-cas-des-entretiens" class="title-slide slide level1 center">
-<h1>Collecter vos propres données : cas des entretiens</h1>
-
-</section>
-<section id="créer-de-nouvelles-données" class="slide level2">
-<h2>Créer de nouvelles données</h2>
-<p>Des raisons de produire ses propres données : absence de données secondaires, spécificités de l’objet ou de la question, …</p>
-<p>Chaque type de données a généralement sa méthdologie de production, et prend place dans un <strong>protocole</strong> à déterminer.</p>
-</section>
-<section id="lintérêt-des-entretiens" class="slide level2">
-<h2>L’intérêt des entretiens</h2>
-<p><em>Un goût prononcé des sciences sociales pour l’entretien</em></p>
-<ul>
-<li>Force <strong>exploratoire</strong> : diversifier les points de vue et les perspectives</li>
-<li>Force <strong>illustrative</strong> : donner accès au terrain</li>
-</ul>
-<p><strong>Penser les entretiens dans la perspective d’un corpus - ce n’est pas un micro-trottoire.</strong></p>
-</section>
-<section id="définir-un-protocole" class="slide level2">
-<h2>Définir un protocole</h2>
-<p>Définir le dispositif de collecte</p>
-<ul>
-<li>Quel est le corpus (qui va être interrogé)</li>
-<li>Comment va se passer la collecte (accès à la personne, conduite de l’entretien)</li>
-<li>Comment transformer les données brutes (l’audio) en données plus spécifiques
-<ul>
-<li>Retranscription ?</li>
-<li>Annotation d’éléments ?</li>
-</ul></li>
-<li>Que se passe-t-il s’il manque un entretien ?</li>
-</ul>
-</section>
-<section id="en-pratique" class="slide level2">
-<h2>En pratique</h2>
-<p>Après : l’enregistement/retranscription est une “trace” qu’il <strong>faut mettre en forme</strong></p>
-<ul>
-<li>Mettre les entretiens dans un format unifié
-<ul>
-<li>.docx au mieux</li>
-</ul></li>
-<li>Nommer les fichiers de manière systématique</li>
-<li>Avoir un fichier avec les métadonnées (date, interlocuteur)</li>
-<li>Transformer les données :
-<ul>
-<li>Coder des éléments spécifiques des entretiens dans un fichier</li>
-</ul></li>
-</ul>
-</section></section>
-<section>
-<section id="en-guise-de-conclusion-temporaire" class="title-slide slide level1 center">
-<h1>En guise de conclusion (temporaire)</h1>
-
-</section>
-<section id="données-enquête" class="slide level2">
-<h2>Données &amp; enquête</h2>
-<ul>
-<li>Avoir une conception ouverte des données pour enrichir l’enquête</li>
-<li>Situer les données au sein de corpus et en lien avec des phénomènes spécifiques</li>
-<li>Existence de nombreuses données réutilisables</li>
-<li>Des bonnes pratiques transversales</li>
-<li>Des spécificités (méthodes, outils) suivant le type de données</li>
-</ul>
-</section>
-<section id="décrire-les-données-dans-ses-travaux" class="slide level2">
-<h2>Décrire les données dans ses travaux</h2>
-<p>Dans les travaux :</p>
-<ul>
-<li>Préciser la manière dont ont été constituées les données et.ou les sources
-<ul>
-<li>Pour chaque corpus</li>
-</ul></li>
-<li>Donner des informations descriptives sur le contenu</li>
-<li>Les transformations qui ont été faites
-<ul>
-<li>Ex. les filtrages</li>
-</ul></li>
-<li>Préciser les limitations s’il y en
-<ul>
-<li>Données manquantes</li>
-<li>Artefacts/problèmes</li>
-</ul></li>
-</ul>
-</section>
-<section id="limportance-de-décrire-les-données" class="slide level2">
-<h2>L’importance de décrire les données</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./img/methodopress.png" class="quarto-figure quarto-figure-center" width="900"></p>
-</figure>
-</div>
-<p><a href="https://www.researchgate.net/publication/344083798_Cycling_the_city_Representation_in_the_French_media">Lipovsky, Caroline. “Cycling the city: Representation in the French media.” Language, Context and Text 2.2 (2020): 334-367.</a></p>
-</section>
-<section id="aller-vers-lanalyse" class="slide level2">
-<h2>Aller vers l’analyse</h2>
-<p>Pour aller aux résultats : des méthodes &amp; des outils</p>
-<p>Trois approches :</p>
-<ul>
-<li>“génériques” : appliquer des méthodes directement sur les données (Excel, codage manuel, …)</li>
-<li>“logiciels” : mobiliser des logiciels qui implémentent les méthodes plus ou moins automatisés (Iramuteq, VosViewer, Jamovi, Qualcoder, …)</li>
-<li>“programmation” : automatiser les traitements avec la programmation (Python, R)</li>
-</ul>
-<!--
-
-
-## Les données : le point de départ
-
-![](./img/repro.jpg){fig-align="center"}
-
-
-## L'analyse dans tout ça ?
-
-**Données** > Transformation > Analyse > Résultats
-
-*Les données sont un moyen* et prennent place dans un processus d'analyse.
-
-- Des spécialisation sur les données 
-- Des méthodes de traitement spécifiques aux données
-- Des outils différents (image, son, etc.)
-
-
-## La forme compte : quels formats ?
-
-Les données ont une forme matérielle qui va poser plus ou moins de difficultés
-
-- Données décomposées :
-    - structurées (tableaux)
-    - non structuré (zip de pdf)
-- Données agrégées
-    - Tableaux déjà calculés
-    - Graphiques
-
-Conséquences sur le traitement et ce qu'on peut en faire.
-
-
-## Volume des données
-
-- Le volume des données n'est pas l'élément le plus important
-- Adéquation avec la question
-
-**Ne pas hésiter à restreindre la taille et privilégier l'adéquation**
-
-## Qualité des données
-
-Toutes les données ne se valent pas : une qualité multidimensionnelle.
-
-- Tracabilité de la chaine de production
-- Fiabilités (producteurs douteux, ou au contraire légitime)
-- Données manquantes (est-ce qu'il manque des élément)
-- Erreurs dans le corpus
-- Ouverture versus fermeture de l'accès
-- ...
-
-## La place grandissante de l'IA
-
-- Délégation grandissante à des outils agentiques/génératifs
-- Ne remplace pas les aspects discutés aujourd'hui
-- Importance de garder l'humain dans la boucle
-
-# Gestion concrète des données
-
-## Et comment on fait en fait ?
-
-- Comment bien collecter et conserver les données ?
-- Où les stocker ?
-- Comment travailler collaborativement avec des données ?
-
-
-## [Bonnes pratiques numériques](https://github.com/emilienschultz/dstool/blob/b16380a790fbc176f21792529b28c394b75d9b46/docs/Bonnes%20pratiques%20donn%C3%A9es%20SHS.md)
-
-- Collecter et conserver les données brutes
-- Documenter le contenu dans des **métadonnées**
-- Documenter chacune des transformations
-- Consolider un corpus nettoyé avant l'analyse
-
-**Dans l'idéal, aller vers la reproductibilité**
-
-
-
-## Documenter documenter documenter
-
-Journal collectif des traitements
-
-![](./img/comment.png){fig-align="center"}
-
-
-
-## Format et stockage des données
-
-- Simplifier le plus possible
-    - .txt, .csv, ...
-- Faire attention à la confidentialité
-    - Anonymisation/pseudonymisation
-- Noms clairs
-- Dater les fichiers
-- Système de dossier clair
-
-
-
-## Transformer et nettoyer ses données
-
-- Conserver les données brutes
-- Mettre ensuite en forme les données pour faciliter les analyses
-- Gérer les problèmes (valeurs nulles, etc.)
-
-*Bonne pratique : garder une trace des modifications*
-
-![](img/tidydata.png){fig-align="center"}
-
-
-
-## Sensibilité des données
-
-- Limiter les données identifiantes
-- Consentement et autorisation
-
-![](img/privacy.png){fig-align="center"}  
-
--->
 
 </section></section>
     </div>
@@ -1150,19 +868,19 @@ Journal collectif des traitements
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="slidesS1_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="slidesS1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="slidesS1_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="slidesS1_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="slides_s2_v2_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
